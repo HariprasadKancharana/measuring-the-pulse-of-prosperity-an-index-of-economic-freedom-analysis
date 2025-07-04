@@ -84,12 +84,7 @@ This project helps users understand how **economic freedom influences prosperity
 **KANCHARANA HARIPRASAD**
 🎓 B.Tech CSE Student  
 🏫 LAKIREDDY BALI REDDY COLLEGE OF ENGINEERING  
-🗣️ _“Empowering data to speak the language of policy.”_
 
 ---
 
-## 💬 Contributions & Feedback
 
-Pull requests, feature suggestions, and stars ⭐ are always welcome!
-
-> “Let your data tell the story of freedom.”
