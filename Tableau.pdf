@@ -1,0 +1,55 @@
+📊 Dashboard Performance Summary
+🗓️ Date: 21 June 2025
+🆔 Team ID: LTVIP2025TMID48722
+📁 Project Name: Measuring the Pulse of Prosperity – Index of Economic Freedom Analysis
+
+🟩 Data Rendered
+The dashboard shows country-level economic data:
+- Economic Score/Index
+- Country ID and Name
+- 5-Year GDP Growth Rate
+- Business Freedom, Corporate Tax Rate, FDI Inflow
+- Financial Freedom, Fiscal Health, GDP and GDP per Capita
+- Government Integrity, Government Expenditure & Spending
+- Income Tax Rate, Inflation, Unemployment, Population Index
+- Multi-year data to analyze trends across nations
+
+🟨 Data Preprocessing
+Steps followed to prepare clean and accurate data:
+- Handling missing values and inconsistencies
+- Standardizing country names for mapping
+- Aggregating data by year and region
+- Creating calculated fields like GDP Growth and Composite Economic Index
+
+🟧 Filter Usage
+The dashboard uses multiple filters:
+- Country Name filter
+- Measures filter for different indicators (GDP, Inflation, etc.)
+- Year slider to explore across time
+- Interactive map selection for live filtering
+
+🟥 Calculated Fields
+These fields support smarter analysis:
+- Composite Economic Score
+- 5-Year GDP Growth Rate
+- Top 40 Economic Rankings
+- Least Ranked Countries
+- Regional Groupings by continent
+
+🟦 Dashboard Design
+Includes minimum 5 visual sections:
+- Choropleth map of global economic freedom
+- Inflation vs Unemployment scatter chart
+- Population index bar chart
+- Text box summarizing key insights
+- Charts showing Top 40 & Countries below Index 25
+
+🟪 Story Design (Tableau)
+Includes 7 story points:
+- World Map of Economic Score
+- Top 40 Countries Ranked
+- Least Ranked Countries
+- Inflation vs Unemployment Comparison
+- Population Index
+- Financial Freedom Overview
+- 5-Year GDP Growth Tracker
