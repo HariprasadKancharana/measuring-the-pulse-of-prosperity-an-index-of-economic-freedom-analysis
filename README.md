@@ -20,19 +20,19 @@ This project helps users understand how **economic freedom influences prosperity
 - 🌐 **Global Dashboard**: Compare country-wise scores across years  
 - 📈 **Trends & Correlations**: GDP, inflation, unemployment vs. freedom index  
 - 🗺️ **Interactive Maps**: Filters by year, country, and region  
-- 📤 **Export Tools**: Download charts, reports, and raw data
+- 📤 **Export Tools**: Download charts, reports, and raw data  
 
 ---
 
 ## 🧰 Tech Stack
 
-| Tool        | Purpose                         |
-|-------------|----------------------------------|
-| Tableau     | Building dashboards              |
-| Python      | Cleaning & preprocessing data    |
-| Pandas      | Data manipulation                |
-| GitHub      | Project hosting & collaboration  |
-| Heritage Foundation & World Bank | Data sources |
+| Tool                             | Purpose                         |
+|----------------------------------|----------------------------------|
+| Tableau                          | Building dashboards              |
+| Python                           | Cleaning & preprocessing data    |
+| Pandas                           | Data manipulation                |
+| GitHub                           | Project hosting & collaboration  |
+| Heritage Foundation & World Bank| Data sources                     |
 
 ---
 
@@ -52,6 +52,7 @@ This project helps users understand how **economic freedom influences prosperity
 
 📽️ [Project Demo Video](https://drive.google.com/file/d/1PZOtpeTq_qFR2kWouP9-GgvB3vqhhyq3/view)  
 📊 [Dataset Source](https://drive.google.com/file/d/1EBIa1LtM3Ni2Uh3nekLB6wt3263Q3NeX/view?usp=share_link)
+📜 [Credly Profile – Verified Credentials](https://www.credly.com/users/hariprasad-kancharana)
 
 ---
 
@@ -59,7 +60,7 @@ This project helps users understand how **economic freedom influences prosperity
 
 - 🏛️ Governments: Analyze national economic policies  
 - 🧪 Students & Researchers: Use visuals for insights  
-- 💼 Investors: Spot growth and risk trends
+- 💼 Investors: Spot growth and risk trends  
 
 ---
 
@@ -67,7 +68,7 @@ This project helps users understand how **economic freedom influences prosperity
 
 - 🔄 Dependent on regular data updates  
 - 🌐 Internet needed for dashboard access  
-- 🧑‍💻 Some digital literacy required
+- 🧑‍💻 Some digital literacy required  
 
 ---
 
@@ -81,10 +82,8 @@ This project helps users understand how **economic freedom influences prosperity
 ---
 
 ## 👨‍💻 Author
-**KANCHARANA HARIPRASAD**
+
+**KANCHARANA HARIPRASAD**  
 🎓 B.Tech CSE Student  
 🏫 LAKIREDDY BALI REDDY COLLEGE OF ENGINEERING  
-
----
-
 
