@@ -1,0 +1,101 @@
+PROJECT: Measuring the Pulse of Prosperity – Index of Economic Freedom Analysis
+TEAM ID: LTVIP2025TMID50326
+
+────────────────────────────────────────────
+📁 DATA MODEL SCHEMA
+
+Dimensions:
+- Country_ID (String)
+- Country_Name (String)
+- Region (String)
+- Year (Integer)
+
+Measures:
+- Economic_Score
+- GDP
+- GDP_per_Capita
+- FDI_Inflow
+- Inflation_Rate
+- Unemployment_Rate
+- Corporate_Tax_Rate
+- Income_Tax_Rate
+- Business_Freedom
+- Financial_Freedom
+- Fiscal_Health
+- Government_Expenditure
+- Government_Integrity
+- Population_Index
+
+────────────────────────────────────────────
+🛠️ DATA PREPROCESSING STEPS
+
+- Handled missing/null values using: IFNULL([Measure], 0)
+- Standardized country names for map consistency
+- Aggregated data using LOD: {FIXED [Year], [Region]: SUM([Measure])}
+- Created calculated fields:
+  → 5-Year GDP Growth Rate
+  → Composite Economic Score
+
+────────────────────────────────────────────
+🧮 CALCULATED FIELDS
+
+// Composite Economic Score
+(Economic_Score + Business_Freedom + Financial_Freedom + Fiscal_Health + Government_Integrity) / 5
+
+// 5-Year GDP Growth Rate
+(ZN([GDP]) - LOOKUP(ZN([GDP]), -5)) / ABS(LOOKUP(ZN([GDP]), -5))
+
+// Top 40 Economic Rankings
+IF RANK([Composite_Economic_Score]) <= 40 THEN "Top 40" ELSE NULL
+
+// Least Ranked Countries
+IF [Composite_Economic_Score] <= 25 THEN "Below Index 25" ELSE NULL
+
+// Regional Grouping by Continent
+CASE [Region]
+  WHEN "Asia-Pacific" THEN "APAC"
+  WHEN "Europe" THEN "EU"
+  WHEN "Middle East" THEN "MENA"
+  WHEN "Africa" THEN "AFR"
+  WHEN "Americas" THEN "AMER"
+END
+
+────────────────────────────────────────────
+🔧 FILTERS IMPLEMENTED
+
+- Country_Name: Drop-down list
+- Indicator Type: Multi-select filter
+- Year: Slider filter for time selection
+- Map Selector: Geographic filtering via map click
+
+────────────────────────────────────────────
+📊 DASHBOARD COMPONENTS
+
+1. Choropleth Map – Visualizing global composite scores
+2. Scatter Plot – Inflation Rate vs Unemployment Rate
+3. Bar Chart – Population Index across countries
+4. Summary Text Box – Dynamic insights per user selection
+5. Tables for Top 40 and Below Index 25 countries
+
+────────────────────────────────────────────
+📚 STORY DESIGN – TABLEAU STORY POINTS
+
+1. Global Economic Score Overview
+2. Top 40 Economies Ranked by Score
+3. Least Ranked Countries (Index ≤ 25)
+4. Inflation vs Unemployment Comparison
+5. Population Index Summary
+6. Financial Freedom Deep Dive
+7. 5-Year GDP Growth Tracker
+
+────────────────────────────────────────────
+
+VERSION: 1.0  
+AUTHOR: Hariprasad  
+DATE CREATED: July 2025  
+TOOLS USED: Tableau, Excel, SQL
+
+NOTES:
+- All visual sections are interactive and respond to filters
+- Calculations validated using sample cross-year data
+- Country and region mappings verified for consistency
